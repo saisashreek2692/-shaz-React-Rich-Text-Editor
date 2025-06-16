@@ -1,7 +1,7 @@
 {
   "name": "-shaz-react-rich-text-editor",
   "version": "0.1.0",
-  "private": true,
+  "public": true,
   "description": "A lightweight rich text editor for React with formatting tools. Created this Text Editor for ReactJS Applications, It supports from version 18+.",
   "scripts": {
     "dev": "next dev --turbopack",
