@@ -1,9 +1,15 @@
-import Image from "next/image";
+'use client';
+import dynamic from "next/dynamic";
+
+// Dynamically import the TextEditor for client-side rendering
+const TextEditor = dynamic(() => import("./(components)/TextEditor"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
-    <>
-      <h1>Welcome to Text Editor App</h1>
-    </>
+    <main className="flex items-center justify-center">
+      <TextEditor />
+    </main>
   );
 }
